@@ -60,7 +60,7 @@ namespace EmployeeTaxCalculator
             }
             else if (gross > 37000 && gross <= 90000)
             {
-                result = Math.Round((gross * 0.37), 2);
+                result = Math.Round((gross * 0.32), 2);
             }
             else if (gross > 90000 && gross <= 180000)
             {
