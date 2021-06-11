@@ -61,7 +61,7 @@ namespace EmployeeTaxCalculator
                 }
 
 
-                //for first student
+                //for first Employee
                 if (previousId == -1)
                 {
                     previousId = int.Parse(payRecordLine[0]);
@@ -83,7 +83,7 @@ namespace EmployeeTaxCalculator
 
             }
 
-            //this is for creating last student record
+            //this is for creating last employee record
             if (previousId != -1)
             {
                 payRecords.Add(CreatePayRecord(previousId, hours.ToArray(), rate.ToArray(), visa, yearToDate));

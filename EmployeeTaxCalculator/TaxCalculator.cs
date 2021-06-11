@@ -54,19 +54,19 @@ namespace EmployeeTaxCalculator
         public static double CalculateWorkingHolidayTax(double gross, double yearToDate)
         {
             double result = 0;
-            if (gross > -1 && gross <= 37000)
+            if (gross + yearToDate > -1 && gross+yearToDate <= 37000)
             {
                 result = Math.Round((gross * 0.15),2);
             }
-            else if (gross > 37000 && gross <= 90000)
+            else if (gross+yearToDate > 37000 && gross+yearToDate <= 90000)
             {
                 result = Math.Round((gross * 0.32), 2);
             }
-            else if (gross > 90000 && gross <= 180000)
+            else if (gross+yearToDate > 90000 && gross+yearToDate <= 180000)
             {
                 result = Math.Round((gross * 0.37), 2);
             }
-            else if (gross > 180000 && gross <= 9999999)
+            else if (gross + yearToDate > 180000 && gross + yearToDate <= 9999999)
             {
                 result = Math.Round((gross * 0.45), 2);
             }

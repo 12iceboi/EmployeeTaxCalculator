@@ -30,7 +30,9 @@ namespace EmployeeTaxCalculator
                 _visa = value;
             }
         }
-
+        /// <summary>
+        /// Property for yearToDate
+        /// </summary>
         public int YearToDate
         {
             get
